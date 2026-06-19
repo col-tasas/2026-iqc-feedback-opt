@@ -35,7 +35,6 @@ python main.py --exp=1
 The experiment will then be run which might take some time. This will create a data folder (if necessary) and safe the results inside. -->
 
 ## Contact
-Some Contact info of the author(s)
 🧑‍💻 Fabian Jakob
 
 📧 [fabian.jakob@ist.uni-stuttgart.de](mailto:fabian.jakob@ist.uni-stuttgart.de)
