@@ -21,7 +21,7 @@ This repository was developed and tested using MATLAB R2023b with the following 
 - Robust Control Toolbox
 - IQClab ([this commit](https://github.com/JoostVeenman/IQClab/tree/f160385bcb7bb601b4f47eda6cc71d0a850628b3))
 
-IQClab can be used standalone through through the MATLAB built-in SDP parser LMILab. However, several scripts rely on the alternative parser YALMIP in combination with the MOSEK solver.
+IQClab can be used standalone through the MATLAB built-in SDP parser LMILab. However, several scripts rely on the alternative parser YALMIP in combination with the MOSEK solver.
 
 YALMIP can be downloaded [here](https://yalmip.github.io/download/), and an academic MOSEK license can be requested [here](https://www.mosek.com/products/academic-licenses/).
 
