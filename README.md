@@ -13,29 +13,24 @@ This repository contains the implementations from our paper
 
 > F. Jakob and A. Iannelli. "A Generalized Plant Perspective on Linear-Convex Feedback Optimization." arXiv preprint. arXiv:2606.14471 (2026). 
 
-The code will follow soon!
+## Installation
 
+This repository was developed and tested using MATLAB R2023b with the following dependencies:
 
-<!-- ## Installation
-
-The repo has been developed with Matlab 2023b under the following dependencies:
-
+- Simulink
 - Robust Control Toolbox
-- IQClab -->
+- IQClab ([tested with this commit](https://github.com/JoostVeenman/IQClab/tree/f160385bcb7bb601b4f47eda6cc71d0a850628b3))
 
+IQClab can be used as a standalone package through its built-in SDP parser LMILab. However, several scripts rely on the alternative parser YALMIP in combination with the MOSEK solver.
 
-<!-- ## Some info on how to execute code
-Her some info on how to execute the code can be added. Please follow the guidelines regarding folder structure and main-files.
-E.g., 
+YALMIP can be downloaded [here](https://yalmip.github.io/download/), and an academic MOSEK license can be requested [here](https://www.mosek.com/products/academic-licenses/).
 
-To run Experiment 1 (2, 3) navigate to the src folder and execute 
-``` terminal
-python main.py --exp=1
-```
-The experiment will then be run which might take some time. This will create a data folder (if necessary) and safe the results inside. -->
+After installation, ensure that the YALMIP and MOSEK directories are correctly added to the IQClab path as specified in the IQClab installation script.
+
+## Some info on how to execute code
+The `src` directory yields executable scripts to recreate the numeric experiments of the paper.
 
 ## Contact
-Some Contact info of the author(s)
 🧑‍💻 Fabian Jakob
 
 📧 [fabian.jakob@ist.uni-stuttgart.de](mailto:fabian.jakob@ist.uni-stuttgart.de)
