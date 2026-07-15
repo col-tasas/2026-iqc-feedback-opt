@@ -19,16 +19,29 @@ This repository was developed and tested using MATLAB R2023b with the following 
 
 - Simulink
 - Robust Control Toolbox
-- IQClab ([this commit](https://github.com/JoostVeenman/IQClab/tree/f160385bcb7bb601b4f47eda6cc71d0a850628b3))
+- IQClab
 
-IQClab can be used standalone through the MATLAB built-in SDP parser LMILab. However, several scripts rely on the alternative parser YALMIP in combination with the MOSEK solver.
+Standalone ode solver routines will follow to remove the Simulink dependency.
 
-YALMIP can be downloaded [here](https://yalmip.github.io/download/), and an academic MOSEK license can be requested [here](https://www.mosek.com/products/academic-licenses/).
+### Installing IQClab
 
-After installation, ensure that the YALMIP and MOSEK directories are correctly added to the IQClab path as specified in the IQClab installation script.
+The correct commit of IQClab will be pulled as submodule upon cloning.:
 
-## Some info on how to execute code
+```
+git clone  --recurse-submodules https://github.com/col-tasas/2026-iqc-feedback-opt.git
+```
+
+After cloning, go to the [IQClab installation file](./IQClab/IQClab_install.m) and correctly set the path of the toolbox.
+
+IQClab can be used standalone through the MATLAB built-in SDP parser LMILab. However, several scripts rely on the alternative parser YALMIP in combination with the MOSEK solver. YALMIP can be downloaded [here](https://yalmip.github.io/download/), and an academic MOSEK license can be requested [here](https://www.mosek.com/products/academic-licenses/).
+
+
+## Running the code
+
 The `src` directory yields executable scripts to recreate the numeric experiments of the paper.
+
+Note that the IQC synthesis is sensitive w.r.t. its numerical parameters. Careful tuning is recommended.
+
 
 ## Contact
 🧑‍💻 Fabian Jakob

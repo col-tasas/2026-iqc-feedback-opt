@@ -2,10 +2,7 @@ clear;
 close all;
 rng(0);
 
-%% insert your IQCLAB path here %%
-error('First insert your IQClab path')
-path_to_iqclab_install = ...
-run(path_to_iqclab_install)
+run(../IQClab/IQClab_install.m)
 
 addpath('sim')
 addpath('plants')
