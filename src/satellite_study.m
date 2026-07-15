@@ -2,7 +2,7 @@ clear;
 close all;
 rng(0);
 
-run(../IQClab/IQClab_install.m)
+run('../IQClab/IQClab_install.m') % <-- make sure to set all paths correctly inside here
 
 addpath('sim')
 addpath('plants')
@@ -29,8 +29,11 @@ beta  = 0;
 rho   = 1;
 leak  = 0;
 
-% Select controller mode: 0 = hard constraint, 1 = smooth
+
 smooth_hard = 0;
+
+% NOTE: Setting smooth_hard to 1 requires to uncomment "R (hard)" in
+%       Simulink (and to comment "R (smooth)" to avoid internal instability.
 
 %% Optimal solution via null-space parameterization
 

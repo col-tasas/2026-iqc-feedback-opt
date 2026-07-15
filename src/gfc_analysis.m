@@ -2,7 +2,7 @@ clear;
 close all;
 rng(0);
 
-run(../IQClab/IQClab_install.m)
+run('../IQClab/IQClab_install.m') % <-- make sure to set all paths correctly inside here
 
 addpath('sim')
 addpath('plants')
@@ -133,7 +133,7 @@ semilogy(k_vals, gamma_vals, 'LineWidth', 1.5);
 grid on
 xlabel('Gain k')
 ylabel('l2-gain w \rightarrow z')
-title('IQC bound vs timescale gain')
+title('l2-gain bound vs timescale gain')
 
 [gamma_opt, idx] = min(gamma_vals);
 k_opt = k_vals(idx);

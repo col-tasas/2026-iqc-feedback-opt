@@ -2,7 +2,7 @@ clear;
 close all;
 rng(0);
 
-run(../IQClab/IQClab_install.m)
+run('../IQClab/IQClab_install.m') % <-- make sure to set all paths correctly inside here
 
 addpath('sim')
 addpath('plants')
