@@ -19,19 +19,19 @@ This repository was developed and tested using MATLAB R2023b with the following 
 
 - Simulink
 - Robust Control Toolbox
-- IQClab
+- [IQClab](https://github.com/JoostVeenman/IQClab)
 
-Standalone ode solver routines will follow to remove the Simulink dependency.
+Standalone ODE solver routines will follow to replace the Simulink dependency.
 
 ### Installing IQClab
 
-The correct commit of IQClab will be pulled as submodule upon cloning.:
+The correct commit of IQClab will be pulled as submodule upon cloning:
 
 ```
 git clone  --recurse-submodules https://github.com/col-tasas/2026-iqc-feedback-opt.git
 ```
 
-After cloning, go to the [IQClab installation file](./IQClab/IQClab_install.m) and correctly set the path of the toolbox.
+After cloning, go to the [IQClab installation file](https://github.com/JoostVeenman/IQClab/blob/main/IQClab_install.m) and correctly set the path of the toolbox.
 
 IQClab can be used standalone through the MATLAB built-in SDP parser LMILab. However, several scripts rely on the alternative parser YALMIP in combination with the MOSEK solver. YALMIP can be downloaded [here](https://yalmip.github.io/download/), and an academic MOSEK license can be requested [here](https://www.mosek.com/products/academic-licenses/).
 
