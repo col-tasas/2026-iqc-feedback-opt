@@ -1,0 +1,3 @@
+[submodule "IQClab"]
+	path = IQClab
+	url = https://github.com/JoostVeenman/IQClab.git
